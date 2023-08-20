@@ -114,7 +114,7 @@ class CreatingTasks extends Component {
           </ul>
           <h1>Tasks</h1>
           {taskList.length === 0 ? (
-            <p>No Tasks Added Yet</p>
+            <p className="error-text">No Tasks Added Yet</p>
           ) : (
             <ul className="tasks-list-con">
               {filteredTasksList.map(eachTask => (

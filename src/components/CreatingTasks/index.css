@@ -67,3 +67,9 @@ label {
   background-color: #f3aa4e;
   color: #131213;
 }
+.error-text {
+  font-size: 30px;
+  font-family: roboto;
+  text-align: center;
+  padding-top: 40px;
+}
