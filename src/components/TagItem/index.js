@@ -1,22 +1,17 @@
-import './index.css'
-
 const TagItem = props => {
-  const {tagDetails, onClickTag} = props
-  const {displayText, optionId, isActive} = tagDetails
+  const {tagDetails, clickTagButton} = props
+  const {optionId, displayText} = tagDetails
 
-  const onClickTagItem = () => {
-    onClickTag(optionId)
+  const activateTag = () => {
+    clickTagButton(optionId)
   }
-  const buttonStyle = isActive ? 'active' : null
-  console.log(isActive)
 
   return (
-    <li className="tag">
-      <button type="button" className={buttonStyle} onClick={onClickTagItem}>
+    <li className="tag-item">
+      <button className="tag-button" type="button" onClick={activateTag}>
         {displayText}
       </button>
     </li>
   )
 }
-
 export default TagItem

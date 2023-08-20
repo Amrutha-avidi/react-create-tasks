@@ -1,10 +1,8 @@
-import CreatingTask from './components/CreatingTask'
+// import CreatingTask from './components/CreatingTask'
 
 import './App.css'
+import CreatingTasks from './components/CreatingTasks'
 
-// These are the lists used in the application. You can move them to any component needed.
-
-// Replace your code here
-const App = () => <CreatingTask />
+const App = () => <CreatingTasks />
 
 export default App
